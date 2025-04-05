@@ -1,10 +1,8 @@
 
 # IP Changer by so1icitx
 
-A sleek Python script for Linux that rotates your IP address using Tor. Set it to change every few seconds with a simple command—great for privacy or testing!
+A **faster, better Python version** of the famous [gr33n37-ip-changer](https://github.com/gr33n37/gr33n37-ip-changer)! This lightweight script rotates your IP address using Tor on Linux. Perfect for **privacy**, **testing**, or **ethical hacking**. Run `sudo python3 ip_changer.py -s 10` to change your IP every 10 seconds—automatically installs `curl` and `tor` on Ubuntu, Debian, Fedora, CentOS, Arch, and more!
 
-## What It Does
-This script uses Tor to switch your IP address at intervals you control. Run it with a command like `-s 10` to change every 10 seconds, or set a number of changes with `-t`. It’s built for Linux and super easy to use.
 
 ## Installation
 
@@ -107,7 +105,10 @@ sudo python3 ip_changer.py
 
 ## Notes
 - For educational use only—stay legal!
+- Inspired by [gr33n37-ip-changer](https://github.com/gr33n37/gr33n37-ip-changer)—credit to the OG!
 
 Got questions? Open an issue on GitHub or send a email at 'so1citix.zone242@passinbox.com'. Enjoy your anonymity!
 
 ---
+
+
