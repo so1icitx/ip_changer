@@ -23,13 +23,26 @@ cd ip-changer
 ```
 
 ### Step 3: Install the Requests Library
-Grab this Python package:
+
+### Arch Linux
 ```bash
-pip3 install requests
+sudo pacman -Syu python python-pip tor openbsd-netcat curl
+sudo pip3 install requests pysocks
 ```
 
 The script will install `curl` and `tor` automatically (as root) for supported Linux distros.
 
+## Firefox Setup
+To see IP changes in Firefox:
+1. Go to `Settings > General > Network Settings > Settings...`.
+2. Select `Manual proxy configuration`.
+3. Set:
+   - SOCKS Host: `127.0.0.1`
+   - Port: `9050`
+   - SOCKS v5
+   - Check `Proxy DNS when using SOCKS v5`
+4. Leave other fields blank, click `OK`.
+5. Refresh pages manually, or use a extension like 'tab reloader'.
 ## Usage
 
 Run it as root since it manages Tor:
@@ -98,9 +111,7 @@ sudo python3 ip_changer.py
 - **Install failed?**: Ensure internet access and try again.
 
 ## Supported Distros
-- Ubuntu/Debian
-- Fedora/CentOS/Red Hat/Amazon Linux
-- Arch Linux (uses full `pacman -Syu` for updates)
+- Tested only on Arch Linux , will test on other distros soon!
 - Others? Report issues if it fails!
 
 ## Notes
@@ -110,5 +121,6 @@ sudo python3 ip_changer.py
 Got questions? Open an issue on GitHub or send a email at 'so1citix.zone242@passinbox.com'. Enjoy your anonymity!
 
 ---
+
 
 
