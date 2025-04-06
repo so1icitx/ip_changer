@@ -19,7 +19,7 @@ Pick your method:
 #### With Git:
 ```bash
 git clone https://github.com/so1icitx/ip_changer.git
-cd ip-changer
+cd ip_changer
 ```
 
 ### Step 3: Install the Requests Library
@@ -27,7 +27,9 @@ cd ip-changer
 ### Arch Linux
 ```bash
 sudo pacman -Syu python python-pip tor openbsd-netcat curl
-sudo pip3 install requests pysocks
+sudo pacman -S python-requests
+sudo pacman -S python-pysocks
+
 ```
 
 The script will install `curl` and `tor` automatically (as root) for supported Linux distros.
